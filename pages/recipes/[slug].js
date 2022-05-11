@@ -16,7 +16,7 @@ export const getStaticPaths = async () => {
     return {
       params: { slug: item.fields.slug }
     }
-  })
+  });
 
   return {
     paths: paths,
