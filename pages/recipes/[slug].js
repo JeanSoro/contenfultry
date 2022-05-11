@@ -40,6 +40,15 @@ export const getStaticProps = async ({ params }) => {
   }
 }
 
+if (!item.length) {
+  return {
+    redirect: {
+      destination: '/',
+      permanent: false
+    }
+  }
+}
+
 
 export default function RecipeDetails({ recipe }) {
 
